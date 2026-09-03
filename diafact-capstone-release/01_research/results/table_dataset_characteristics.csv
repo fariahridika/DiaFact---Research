@@ -1,0 +1,2 @@
+Dataset,N (total),N (train),N (test),All features,Boruta selected,Boruta confirmed,Boruta tentative,Positive rate,Class ratio
+DiaHealth,5437,4349,1088,20,16,14,2,6.34%,1:15

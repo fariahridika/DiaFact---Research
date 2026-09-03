@@ -1,0 +1,17 @@
+experiment,configuration,F1,AUC,note
+A1,Split then scale,0.3061,0.882,
+A1,Scale then split,0.3061,0.882,
+A2,BorderlineSMOTE,0.3787,0.852,
+A2,SMOTE,0.3448,0.837,
+A2,ADASYN,0.3842,0.8395,
+A2,No oversampling,0.3061,0.882,
+A3,With engineered,0.3787,0.852,
+A3,Without engineered,0.3415,0.8285,
+A4,Boruta,0.3787,0.852,
+A4,SelectKBest,0.3842,0.8516,
+A4,No selection,0.3871,0.8409,
+A5,IQR winsorization,0.3787,0.852,
+A5,Z-score removal,0.3108,0.7747,own split
+A5,No outlier handling,0.3895,0.8508,own split
+A7,Oversample then select,0.3974,0.8355,
+A7,Select then oversample,0.3787,0.852,

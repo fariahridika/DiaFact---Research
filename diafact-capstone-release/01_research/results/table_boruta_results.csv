@@ -1,0 +1,4 @@
+Status,Features,Count
+Confirmed,"age, gender, pulse_rate, systolic_bp, diastolic_bp, glucose, weight, bmi, hypertensive, bp_ratio, pulse_pressure, bmi_age, glucose_bmi, cardio_risk",14
+Tentative,"family_hypertension, family_risk",2
+Rejected,"height, family_diabetes, cardiovascular_disease, stroke",4
