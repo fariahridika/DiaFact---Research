@@ -216,21 +216,6 @@ export default function PatientForm() {
           ))}
         </div>
 
-        <div className="section-title">Operating Point</div>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '0.7rem' }}>
-          Sets how readily the model flags a patient. There is no free lunch here —
-          catching more cases always means more false alarms.
-        </p>
-        <div className="toggle-group" style={{ marginBottom: '2rem', flexWrap: 'wrap' }}>
-          {OPERATING_POINTS.map(op => (
-            <button type="button" key={op.key} title={op.hint}
-              className={`toggle-btn${form.operating_point === op.key ? ' active' : ''}`}
-              onClick={() => setForm(f => ({ ...f, operating_point: op.key }))}>
-              {op.label}
-            </button>
-          ))}
-        </div>
-
         {error && (
           <div className="alert-banner alert-danger"
             style={{ marginBottom: '1rem', padding: '0.8rem 1rem', display: 'block' }}>
