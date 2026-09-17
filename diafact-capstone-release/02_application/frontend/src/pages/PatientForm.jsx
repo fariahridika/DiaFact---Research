@@ -89,6 +89,7 @@ export default function PatientForm() {
       }
       setForm(f => ({
         ...f, ...last,
+        operating_point: 'balanced',
         gender: data.gender ?? (last.gender === 1 ? 'Male' : 'Female'),
         name: data.name || f.name,
         age: data.age || f.age,
@@ -99,7 +100,7 @@ export default function PatientForm() {
     }
   };
 
-  const applyPreset = (key) => setForm(f => ({ ...f, ...PRESETS[key] }));
+  const applyPreset = (key) => setForm(f => ({ ...f, ...PRESETS[key], operating_point: 'balanced' }));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
